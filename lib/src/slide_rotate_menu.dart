@@ -11,6 +11,7 @@ class SlideRotateSideMenuState extends SideMenuState {
       color: widget.background ?? const Color(0xFF112473),
       child: Stack(
         fit: StackFit.expand,
+        textDirection: widget.textDirection,
         children: [
           Positioned(
             top: statusBarHeight + (widget.closeIcon?.size ?? 25.0) * 2,

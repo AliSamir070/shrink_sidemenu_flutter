@@ -64,8 +64,8 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return SideMenu(
+      textDirection: TextDirection.ltr,
       key: _endSideMenuKey,
-      inverse: true, // end side menu
       background: Colors.green[700],
       type: SideMenuType.slideNRotate,
       menu: Padding(
@@ -76,6 +76,7 @@ class _MyHomePageState extends State<MyHomePage> {
         setState(() => isOpened = _isOpened);
       },
       child: SideMenu(
+        textDirection: TextDirection.ltr,
         key: _sideMenuKey,
         menu: buildMenu(),
         type: SideMenuType.slideNRotate,

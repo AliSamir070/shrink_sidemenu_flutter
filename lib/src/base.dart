@@ -63,7 +63,7 @@ class SideMenu extends StatefulWidget {
   final SideMenuType type;
 
   final void Function(bool isOpened)? onChange;
-
+  final TextDirection textDirection;
   /// Liquid Shrink Side Menu is compatible with [Liquid ui](https://pub.dev/packages/liquid_ui)
   ///
   /// Create a SideMenu / Drawer
@@ -101,6 +101,7 @@ class SideMenu extends StatefulWidget {
     required this.child,
     this.background,
     this.radius,
+    required this.textDirection,
     this.closeIcon = const Icon(
       Icons.close,
       color: const Color(0xFFFFFFFF),
